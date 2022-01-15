@@ -1,0 +1,201 @@
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer h4{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footerInfo{
+  max-width:1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.gallery , .quickLinks , .contactInfo{
+  width: 100%;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.galleryImg img{
+  width: 30%;
+  margin: 2px;
+}
+
+
+.quicklinksitems{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.quickLinks .col{
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.quicklinksitems .col a{
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.quicklinksitems .col a:hover{
+  color:var(--pink);
+}
+
+.getInTouch{
+  text-align: center;
+  margin-bottom:5px;
+  margin-top: 10px;
+}
+
+.getintouch-texts{
+  display: flex;
+  flex-direction: column;
+}
+
+.getInTouch-address,.getInTouch-phone,.getInTouch-mail{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 250px;
+}
+
+.getInTouch-address i,.getInTouch-phone i,.getInTouch-mail i{
+  color: var(--pink);
+  margin-bottom: 10px;
+}
+
+.getInTouch-address a,.getInTouch-phone a,.getInTouch-mail a{
+  text-decoration: none;
+  color: black;
+}
+
+.getInTouch-address a:hover,.getInTouch-phone a:hover,.getInTouch-mail a:hover{
+  color: var(--pink);
+}
+
+.website{
+  display: flex;
+}
+
+.website a{
+width: 40px;
+height: 40px;
+border:1px solid black;
+border-radius: 50%;
+line-height: 40px;
+text-align: center;
+text-decoration: none;
+color: black;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
+.website a:hover{
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+#copyright{
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media(min-width:768px){
+  .footerInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+   .footerInfo h4{
+    text-align: left;
+  }
+
+  .gallery{
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  .galleryImg img{
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+  }
+
+  .quickLinks{
+    width: 50%;
+    text-align: left;
+    height: 300px;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  .quicklinksitems{
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .quickLinks .col:nth-child(1){
+    margin-right: 50px;
+  }
+
+  .contactInfo{
+    width: 50%;
+    height: 300px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+
+  .getInTouch-address,.getInTouch-phone,.getInTouch-mail{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .getInTouch-address i,.getInTouch-phone i,.getInTouch-mail i{
+    color: var(--pink);
+    margin-right: 15px;
+  }
+  .website{
+    margin-top: -20px;
+  }
+}
+
+@media(min-width:1200px){
+  .gallery , .quickLinks ,.contactInfo{
+    width: 33.3333%;
+    height: 300px;
+  }
+
+  .website i {
+    margin: 0;
+  }
+  .getintouch-texts i{
+    margin-left: 0;
+  }
+
+}

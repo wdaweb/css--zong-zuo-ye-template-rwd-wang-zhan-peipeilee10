@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <!-- googleFont -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./CSS/fontawsome_all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/all.css">
+    <!-- header -->
+    <link rel="stylesheet" href="./CSS/header.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="./CSS/footer.css">
+</head>
+
+<body>
+    <!-- 參考網址 -->
+    <!-- https://www.templatemonsterpreview.com/demo/52072.html?_gl=1*18p1uqt*_ga*MTY3NjkyNjE1MC4xNjM1OTA5ODQx*_ga_FTPYEGT5LY*MTYzNTkxNTc2Mi4yLjEuMTYzNTkxNzQ5NC40Ng..&_ga=2.174586082.1596778930.1635909841-1676926150.1635909841 -->
+    <!-- 0~767px、768px 以上、1200px 以上 -->
+
+    <div id="header-768">
+        <div id="header">
+            <label for="burgermenu" class="hamburger">
+                <span></span>
+            </label>
+            <div class="logo">
+                <img src="./image/logo-default-231x49.png">
+            </div>
+            <div class="shopping-area">
+                <div class="search">
+                    <i class="fas fa-search fa-1x"></i>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <label for="addressbtn" class="address-list">
+                    <i class="fas fa-ellipsis-v"></i>
+                </label>
+            </div>
+        </div>
+
+        <input type="checkbox" id="burgermenu">
+        <div id="sidebar">
+            <ul>
+                <li class="sidebar-item"><a href="#">HOME</a>
+                </li>
+                <li class="sidebar-item"><a href="#">GALLERY</a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="sidebar-item"><a href="#">SHOP</a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="sidebar-item"><a href="#">BLOG</a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="sidebar-item"><a href="#">PAGES</a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="sidebar-item"><a href="#">ELEMENTS</a>
+                    <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="sidebar-item"><a href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+
+        <input type="checkbox" id="addressbtn">
+        <div class="address">
+            <div class="addressInfo">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>523 Sylan Ave<br>
+                    Mountain View,CA 94041USA</p>
+            </div>
+            <div class="getInTouch" type="button">
+                <i class="far fa-envelope fa-1.5x"></i>
+                <a href="#">GET IN TOUCH</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 導覽列 1200px 出現 -->
+
+    <div id="header-1200">
+        <div class="header-wrap">
+            <div id="navbar-aside">
+                <div class="addressInfo">
+                    <i class="fas fa-map-marker-alt fa-2x" style="color:var(--pink)"></i>
+                    <p>523 Sylan Ave<br>
+                        Mountain View,CA 94041USA</p>
+                </div>
+                <div class="logo">
+                    <img src="./image/logo-default-231x49.png">
+                </div>
+                <div class="getInTouch" type="button">
+                    <i class="far fa-envelope fa-1.5x"></i>
+                    <a href="#">GET IN TOUCH</a>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <div class="navbar-outside">
+                <div id="navbar-main">
+                    <ul class="navbar-item">
+                        <li><a href="#">HOME</a>
+                            <span></span>
+                        </li>
+                        <li><a href="#">GALLERY</a>
+                            <span style="width:90px; left:10%"></span>
+                            <ul>
+                                <li><a href="#"> GRID GALLERY</a></li>
+                                <li><a href="#">GRID FULLWIDTH GALLERY</a></li>
+                                <li><a href="#">MASONARY GALLERY</a></li>
+                                <li><a href="#">MASONARY FULLGRID GALLERY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SHOP</a>
+                            <span></span>
+                            <ul>
+                                <li><a href="#">GRID SHOP</a></li>
+                                <li><a href="#">SHOP LIST</a></li>
+                                <li><a href="#">SINGLE PRODUCT</a></li>
+                                <li><a href="#">CART PAGE</a></li>
+                                <li><a href="#">CHECKOUT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BLOG</a>
+                            <span></span>
+                            <ul>
+                                <li><a href="#">GRID BLOG</a></li>
+                                <li><a href="#">BLOG LIST</a></li>
+                                <li><a href="#">BLOG POST</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">PAGES</a>
+                            <span></span>
+                            <ul>
+                                <li><a href="#">WHAT WE OFFER</a></li>
+                                <li><a href="#">OUR TEAM</a></li>
+                                <li><a href="#">TESTIMONIALS</a></li>
+                                <li><a href="#">PRICING LIST</a></li>
+                            </ul>
+                        </li>
+                        <li class="elements">
+                            <a href="#">ELEMENTS</a>
+                            <span style="width:100px; left:10%"></span>
+                            <ul class="elements-contents">
+                                <li>
+                                    <div class="elements-title">
+                                        <p><i class="fab fa-gratipay"></i>ELEMENTS
+                                        </p>
+                                    </div>
+                                    <div class="elements-body">
+                                        <div>
+                                            <p><a href="#">TYPOGRAPHY</a></p>
+                                            <p><a href="#">ICON LIST</a></p>
+                                            <p><a href="#">PROGRESS BARS</a></p>
+                                            <p><a href="#">CALLS TO ACTION</a></p>
+                                            <p><a href="#">TABS & ACCORCIONS</a></p>
+                                        </div>
+                                        <div>
+                                            <p><a href="#">BUTTONS</a></p>
+                                            <p><a href="#">TABLES</a></p>
+                                            <p><a href="#">FORMS</a></p>
+                                            <p><a href="#">COUNTERS</a></p>
+                                            <p><a href="#">GRID SYSTEM</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="elements-title"><i class="fab fa-gratipay"></i>ADDITIONAL PAGES</p>
+                                    <p><a href="#">404 PAGES</a></p>
+                                    <p><a href="#">COMING SOON</a></p>
+                                    <p><a href="#">PRIVACY POLICY</a></p>
+                                    <p><a href="#">SEARCH RESULTS</a></p>
+                                </li>
+                                <li>
+                                    <p class="elements-title"><i class="fab fa-gratipay"></i>WELCOME TO OUR STORE</p>
+                                    <img src="./image/banner-1-300x202.jpg">
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+
+                    <div class="tools">
+                        <i class="fas fa-search fa-1x"></i>
+                        <i class="fas fa-shopping-cart fa-1x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="big-container">
+        <div class="section-1-mainBanner">
+            <div class="section-1-text">
+                <div class="textOfDelicious">Delicious</div>
+                <div class="textOfCakeForYou">CAKES FOR YOU</div>
+                <p class="texts">Sweet Bakery offers the best cakes and sweets for you.</p>
+                <input type="button" value="SHOP NOW" class="shopNowBtn">
+            </div>
+        </div>
+
+        <div class="section-2-freshCakes">
+            <div class="section-2-container">
+                <div class="promo">
+                    <div class="promo-texts">
+                        <div class="textOfOnlyFreshCake">Only Fresh Cake</div>
+                        <p class="textOfPromo">All of our products are made from scratch using family recipes with
+                            only the highestquality ingredients. We bake and sell fresh daily to ensure only the best
+                            products are sold to our customers. </p>
+                        <a href="#" class="forwardBtn"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-3-whatWeOffer ">
+            <h2>WHAT WE OFFER</h2>
+            <div id="whatWeOffer" class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./image/offer-1-340x243.jpg">
+                        <div class="offertxt">
+                            <h4>PARTY CUPCAKES</h4>
+                            <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients
+                                and
+                                no preservatives.</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/offer-2-340x243.jpg">
+                        <div class="offertxt">
+                            <h4>CHOCO CAKES</h4>
+                            <p>Nothing tastes better than a chocolate cake with a variety of flavors, which is always
+                                available at our bakery.</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/offer-3-340x243.jpg">
+                        <div class="offertxt">
+                            <h4>WEDDING CAKES</h4>
+                            <p>Want to make your wedding unforgettable? Then you need to order a unique wedding cake at
+                                Sweet Bakery!</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="section-4-newProduct">
+            <div class="section-4-container">
+                <h2>NEW PRODUCTS</h2>
+                <div id="newProducts" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./image/product-1-152x160.png">
+                            <div class="producttxt">
+                                <h4>CHOCOLATE TRUFFLES</h4>
+                                <p>$23.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-2-157x127.png">
+                            <div class="producttxt">
+                                <h4>CHOCOLATE PUDDING</h4>
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-3-179x114.png">
+                            <div class="producttxt">
+                                <h4>DARK CHOCOLATE</h4>
+                                <p>$15.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-4-215x112.png">
+                            <div class="producttxt">
+                                <h4>CHOCOLATE COOKIES</h4>
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-1-152x160.png">
+                            <div class="producttxt">
+                                <h4>CHOCOLATE TRUFFLES</h4>
+                                <p>$23.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-2-157x127.png">
+                            <div class="producttxt">
+                                <h4>CHOCOLATE PUDDING</h4>
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-3-179x114.png">
+                            <div class="producttxt">
+                                <h4>DARK CHOCOLATE</h4>
+                                <p>$15.00</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/product-4-215x112.png">
+                            <div class="producttxt">
+                                <h4>CHOCOLATE COOKIES</h4>
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-5-whyChooseUs">
+            <h2 class="textOfwhyChooseUs">WHY CHOOSE US</h2>
+            <div class="whychooseUs-container">
+                <div class="choose-row-1">
+                    <div class="col">
+                        <div class="Quality-icon">
+                            <i class="fas fa-birthday-cake fa-3x"></i>
+                        </div>
+                        <div class="card-text">
+                            <a href="#">QUALITY PRODUCTS</a>
+                            <p>We guarantee the quality of all the cakes we provide as they are baked using the freshest
+                                ingredients.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="col">
+                        <div class="delivery-icon">
+                            <i class="fas fa-truck fa-3x"></i>
+                        </div>
+                        <div class="card-text">
+                            <a href="#">FREE DELIVERY</a>
+                            <p>All orders submitted by our US clients are delivered for free throughout the United
+                                States.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 草莓 -->
+                <div class="choose-row-2">
+                    <img src="./image/index-1-377x212.jpg">
+                </div>
+
+                <div class="choose-row-3">
+                    <div class="col">
+                        <div class="catering-icon">
+                            <i class="fab fa-canadian-maple-leaf fa-3x"></i>
+                        </div>
+                        <div class="card-text">
+                            <a href="#">CATERING SERVICE</a>
+                            <p>Our bakery also provides an outstanding catering service for events and special
+                                occasions.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="col">
+                        <div class="pay-icon">
+                            <i class="far fa-credit-card fa-3x"></i>
+                        </div>
+                        <div class="card-text">
+                            <a href="#">ONLINE PAYMENT</a>
+                            <p>We accept all kinds of online payments including Visa, MasterCard, American Express
+                                credit cards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-6-summerSale">
+        <div class="container">
+            <h2>SUMMER SALE</h2>
+            <div class="text-wrap">
+                <p class="twentyPercent">-20%</p>
+                <p>ON ALL CAKES</p>
+            </div>
+            <p class="section-6-texts">Purchase our tasty cakes and sweets for your next event or family dinner at our
+                online shop and save more money than anywhere.</p>
+            <a href="#" class="shopNow-btn"> SHOP NOW </a>
+        </div>
+    </div>
+
+
+    <div class="section-7-aboutUs">
+        <div class="container-7">
+            <h2>ABOUT US</h2>
+            <div class="about-row">
+                <div class="about-col-1">
+                    <img class="aboutUs-img" src="./image/about-570x511.jpg">
+                </div>
+                <div class="about-col-2">
+                    <div class="aboutUs-text-wrap">
+                        <div class="ourmission-text">
+                            <h3>PROVIDING QUALITY BAKED GOODS FOR ALL CUSTOMERS</h3>
+                            <p>Our mission is to create a bakery that makes the best quality baked goods on site from
+                                scratch, and where both employees and customers would feel comfortable.</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="aboutUs-menu-wrap">
+                        <ul>
+                            <li class="our-mission-li">OUR MISSION</li>
+                            <li class="our-value-li">OUR VALUES</li>
+                            <li class="our-goals-li">OUR GOALS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-8-ourTeam">
+        <div class="section-8-container">
+            <h2>OUR TEAM</h2>
+            <div id="ourTeam" class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./image/team-1-249x249.jpg">
+                        <div class="teamDescription">
+                            <div class="teamTextWrap">
+                                <a href="#">RICHARD SMITH</a>
+                                <p>Richard has a true passion for baking and that’s why he has been our founder and head
+                                    baker since day
+                                    one.</p>
+                            </div>
+                            <div class="teamWebWrap">
+                                <i class="fab fa-facebook-f fa"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/team-2-249x249.jpg">
+                        <div class="teamDescription">
+                            <div class="teamTextWrap">
+                                <a href="#">SUSAN ANDERSON</a>
+                                <p>Susan spends most of her time baking and cake decorating as well as heading up the
+                                    bakery's marketing initiatives.</p>
+                            </div>
+                            <div class="teamWebWrap">
+                                <i class="fab fa-facebook-f fa"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/team-3-249x249.jpg">
+                        <div class="teamDescription">
+                            <div class="teamTextWrap">
+                                <a href="#">STEVE RUFFALO</a>
+                                <p>Steve is our lead cake designer. He has designed beautiful cakes for various
+                                    occasions
+                                    including weddings, parties, showers, anniversaries and more.</p>
+                            </div>
+                            <div class="teamWebWrap">
+                                <i class="fab fa-facebook-f fa"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-9-allKindsOfCake">
+        <h4>Unique Flavors and Fresh Ingredients</h4>
+        <h2>ALL KINDS OF CAKES</h2>
+        <a href="#" class="readmore-btn"> READ MORE </a>
+    </div>
+
+    <div class="section-10-testMonials">
+        <div class="section-10-container">
+            <h2>TESTIMONIALS</h2>
+            <div id="testimonials" class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="userComment ">
+                            <p>Thank you so much for the elegant cupcakes. They looked and tasted amazing. I’m
+                                recommending you to all
+                                my friends.</p>
+                        </div>
+                        <div class="userinfo">
+                            <img src="./image/user-10-62x62.jpg">
+                            <div class="info-text">
+                                <h5>PATRICK GOODMAN</h5>
+                                <p>Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="userComment ">
+                            <p>Just a note to let you know how fabulous your wedding cake was. Many guests commented on
+                                how delicious it tasted.</p>
+                        </div>
+                        <div class="userinfo">
+                            <img src="./image/user-11-62x62.jpg">
+                            <div class="info-text">
+                                <h5>JANE SMITH</h5>
+                                <p>Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="userComment ">
+                            <p>If you are looking for the mouth deliciousness, then you should definitely try the goods
+                                from the Sweet Bakery.</p>
+                        </div>
+                        <div class="userinfo">
+                            <img src="./image/user-5-62x62.jpg">
+                            <div class="info-text">
+                                <h5>SAM WILSON</h5>
+                                <p>Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="userComment ">
+                            <p>This bakery was great to work with and I will be using them for my future events. Their
+                                cupcakes tasted absolutely delightful.</p>
+                        </div>
+                        <div class="userinfo">
+                            <img src="./image/user-6-62x62.jpg">
+                            <div class="info-text">
+                                <h5>JANE PETERSON</h5>
+                                <p>Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+    <div class="section-11-latestNews">
+        <div class="section-11-container">
+            <h2>LATEST NEWS</h2>
+            <div class="latestNewsRow">
+                <div class="latest-col-1">
+                    <div class="fluffyCake">
+                        <img src="../image/post-1-570x461.jpg">
+                        <div class="fluffyCake-body">
+                            <div>
+                                <p class="time">August 9 , 2020</p>
+                                <p class="title">How to Pipe a Fluffy Frosting Border on a Cake</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-col-2">
+                    <div class="cake-row " style="margin-right: 10px;">
+                        <img src="./image/post-2-270x215.jpg">
+                        <div class="cakeDescription">
+                            <p class="time">August 9 , 2020</p>
+                            <p class="title">Recipe of the Day:Pumpkin Spice Latte Cake</p>
+                        </div>
+                    </div>
+                    <div class="cake-row ">
+                        <img src="./image/post-3-270x215.jpg">
+                        <div class="cakeDescription">
+                            <p class="time">August 9 , 2020</p>
+                            <p class="title">Top 5 Tips for Successful Cake Baking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-12-client">
+        <div class="section-12-container">
+            <div id="client" class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./image/clients-1-120x112.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/clients-2-105x118.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/clients-3-111x98.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/clients-4-122x92.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/clients-5-111x111.png">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footerInfo">
+            <div class="gallery">
+                <h4>GALLERY</h4>
+                <div class="galleryImg">
+                    <img src="./image/grid-gallery-1-130x130.jpg">
+                    <img src="./image/grid-gallery-2-130x130.jpg">
+                    <img src="./image/grid-gallery-3-130x130.jpg">
+                    <img src="./image/grid-gallery-4-130x130 (1).jpg">
+                    <img src="./image/grid-gallery-5-130x130.jpg">
+                    <img src="./image/grid-gallery-6-130x130.jpg">
+                </div>
+            </div>
+            <div class="quickLinks">
+                <h4>QUICK LINKS</h4>
+                <div class="quicklinksitems">
+                    <div class="col">
+                        <a href="#">- About Us</a>
+                        <a href="#">- Our Team</a>
+                        <a href="#">- Shop</a>
+                        <a href="#">- Pricing</a>
+                        <a href="#">- FAQ</a>
+                        <a href="#">- Contact Us</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">- What We Offer</a>
+                        <a href="#">- Our Blog</a>
+                        <a href="#">- Testimonials</a>
+                        <a href="#">- Baking School</a>
+                        <a href="#">- Our Recipes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contactInfo">
+                <div class="getInTouch">
+                    <h4>GET IN TOUCH</h4>
+                    <div class="getintouch-texts">
+                        <div class="getInTouch-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#">523 Sylvan Ave, 5th Floor Mountain View, CA 94041 USA</a>
+                        </div>
+                        <div class="getInTouch-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#">+886 1234567</a>
+                        </div>
+                        <div class="getInTouch-mail">
+                            <i class="far fa-envelope"></i>
+                            <a href="#">info@demolink.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="website">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="copyright">
+        <p> &copy;2022 Sweet Bakery.All Rights Reserved. Privacy Policy. </p>
+    </div>
+
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script>
+        const whatWeOffer = new Swiper("#whatWeOffer", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+
+            }
+        });
+
+        const newProducts = new Swiper("#newProducts", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+            }
+        });
+
+        const ourteam = new Swiper("#ourTeam", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+
+            }
+        });
+        const testimonials = new Swiper("#testimonials", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 50
+                },
+
+            }
+        });
+
+        const client = new Swiper("#client", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 2
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 2
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 2
+                },
+
+            }
+        });
+
+        //  JQ
+
+        $('.our-mission-li').on('click', function () {
+            $('.ourmission-text h3').text("PROVIDING QUALITY BAKED GOODS FOR ALL CUSTOMERS")
+            $('.ourmission-text p').text("Our mission is to create a bakery that makes the best quality baked goods on site from scratch, and where both employees and customers would feel comfortable.")
+        })
+
+        $('.our-value-li').on('click', function () {
+            $('.ourmission-text h3').text("ENSURING THE BEST ATMOSPHERE FOR EVERYONE")
+            $('.ourmission-text p').text("We see the most important part of our business in ensuring the happiness of our staff and the satisfaction of our clients by creating a welcoming and caring atmosphere.")
+        })
+
+        $('.our-goals-li').on('click', function () {
+            $('.ourmission-text h3').text("SERVING ONLY THE FRESHEST BAKED GOODS FOR YOU")
+            $('.ourmission-text p').text("We aim to deliver the best baked goods for corporate events and individual celebrations, while also offering the best level of customer service in the United States.")
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
